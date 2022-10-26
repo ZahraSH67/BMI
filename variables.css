@@ -1,0 +1,13 @@
+:root{
+    --base-color:  #d9d0b9;
+
+    --accent-color:#f5efe2; 
+   
+    --circle-color: #D2AC47;
+    --result-color: #ffdd00;
+
+
+
+    --base-font: 'Cormorant', serif;
+    --accent-font: 'Dancing Script', cursive;
+}

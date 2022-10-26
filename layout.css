@@ -1,0 +1,143 @@
+
+body {
+    display: grid;
+    grid: auto /repeat(9,1fr);
+}
+h1{
+    grid-column: 1/-1;
+    grid-row: 1/ span 1;
+}
+.enter-message{
+    grid-column: 1/-1;
+    grid-row: 2/ span 1;
+}
+.calculating-design{
+    grid-column: 1/-1;
+    grid-row: 3/span 2;
+}
+
+.introduction-message{
+    grid-column: 1/-1;
+    grid-row: 5/span 1;
+}
+#first-section{
+    grid-column: 1/4;
+    grid-row: 6/ span 3;
+}
+#second-section{
+    grid-column: 4/7;
+    grid-row: 6/span 3;
+}
+#third-section{
+    grid-column: 7/-1;
+    grid-row: 6/span 3;
+}
+#fourth-section{
+    grid-column: 1/4;
+    grid-row: 9/span 3;
+}
+#fifth-section{
+    grid-column: 4/7;
+    grid-row: 9/span 3;
+}
+#sixth-section{
+    grid-column: 7/-1;
+    grid-row: 9/span 3;
+}
+
+@media screen and (max-width: 900px){
+    body{
+        display: grid;
+        grid: auto /repeat(2,1fr);
+    }
+    h1{
+        grid-column: 1/-1;
+        grid-row: 1/span 1;
+    }
+    .enter-message{
+        grid-column: 1/-1;
+        grid-row: 2/ span 1;
+    }
+    .calculating-design{
+        grid-column: 1/-1;
+        grid-row: 3/span 2;
+    }
+    
+    .introduction-message{
+        grid-column: 1/-1;
+        grid-row: 5/span 1;
+    }
+    #first-section{
+        grid-column: 1/2;
+        grid-row: 6/ span 3;
+    }
+    #second-section{
+        grid-column: 2/3;
+        grid-row: 6/span 3;
+    }
+    #third-section{
+        grid-column: 1/2;
+        grid-row: 9/span 3;
+    }
+    #fourth-section{
+        grid-column: 2/3;
+        grid-row: 9/span 3;
+    }
+    #fifth-section{
+        grid-column: 1/2;
+        grid-row: 12/span 3;
+    }
+    #sixth-section{
+        grid-column: 2/3;
+        grid-row: 12/span 3;
+    }
+    
+}
+
+@media screen and (max-width: 600px) {
+    body{
+        display: grid;
+        grid: auto /(2,1fr);
+    }
+    h1{
+        grid-column: 1/-1;
+        grid-row: 1/span 1;
+    }
+    .enter-message{
+        grid-column: 1/-1;
+        grid-row: 2/ span 1;
+    }
+    .calculating-design{
+        grid-column: 1/-1;
+        grid-row: 3/span 2;
+    }
+    
+    .introduction-message{
+        grid-column: 1/-1;
+        grid-row: 5/span 1;
+    }
+    #first-section{
+        grid-column: 1/-1;
+        grid-row: 6/ span 3;
+    }
+    #second-section{
+        grid-column: 1/-1;
+        grid-row: 9/span 3;
+    }
+    #third-section{
+        grid-column: 1/-1;
+        grid-row: 12/ span 3;
+    }
+    #fourth-section{
+        grid-column: 1/-1;
+        grid-row: 15/span 3;
+    }
+    #fifth-section{
+        grid-column: 1/-1;
+        grid-row: 18/span 3;
+    }
+    #sixth-section{
+        grid-column: 1/-1;
+        grid-row: 21/span 3;
+    }
+}

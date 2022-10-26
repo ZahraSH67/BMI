@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="assets/favicon.ico" type="image/x-icon">
+    <link rel="manifest" href="/assets/manifest.json">
+    <title>BMI APP</title>
+    <script src="script.js" defer></script>
+    <script>
+        if("serviceWorker in navigator"){
+            window.addEventListener("load", function(){
+                navigator.serviceWorker.register("service-worker.js")
+            })
+        }
+    </script>
+</head>
+<body>
+        <h1>Welcome To BMI Calculator APP</h1>
+        <p class="enter-message">Please enter your weight and height!</p>
+        <section class="calculating-design">
+            <label for="">Weight(Kg)</label>
+            <input type="number" name="" id="weight-input">
+            <label for="">Height(cm)</label>
+            <input type="number" name="" id="height-input">
+            <button type="submit" id="submit-button">Calculate</button>
+            <button type="reset" id="reset-button">Reset</button>
+            <p id="show-result"></p>
+        </section> 
+        <p class="introduction-message">If you are overweight, you can use our suggested diets to improve your health!</p>
+        <section id="first-section"><a href="ketoDiet.html"><img src="assets/HG-Keto-Diet.webp" alt=""></a></section>
+        <section id="second-section"><a href="paleoDiet.html"><img src="assets/PaleoDiet.jpg" alt=""></a></section>
+        <section id="third-section"><a href="vegeterians.html"><img src="assets/Vegetarians.jpg" alt=""></a></section>
+        <section id="fourth-section"><a href="vegan.html"><img src="assets/Vegan.jpg" alt=""></a></section>
+        <section id="fifth-section"><a href="mediterranean.html"><img src="assets/Mediterranean.jpg" alt=""></a></section>
+        <section id="sixth-section"><a href="rowDiet.html"><img src="assets/raw-food.jpg" alt=""></a></section>
+</body>
+</html>

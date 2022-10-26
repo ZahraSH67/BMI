@@ -1,0 +1,28 @@
+#show-result{
+    display: none;
+    animation-name: BMIResult;
+    animation-duration: 2s;
+    animation-timing-function: ease-in-out;
+    animation-delay: 2s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-fill-mode: forwards;
+}
+#show-result:hover{
+    font-size: 30px;
+    transition: all 5s linear 1s;
+}
+
+@keyframes BMIResult {
+    0% {
+      transform: scale(0.1);
+      opacity: 0;
+    }
+    60% {
+      transform: scale(1.2);
+      opacity: 1;
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
